@@ -1,8 +1,8 @@
-# Biuro Rachunkowe Magdalena Brzuchalski
+# Biuro Rachunkowe Magdalena Brzuchalska
 
 ## Profesjonalna księgowość i kadry dla małych firm
 
-Witam na stronie **Magdalena Brzuchalski Biuro Rachunkowe**. Jestem magistrem finansów i rachunkowości Uniwersytetu Morskiego i posiadam ponad 15 lat doświadczenia w księgowości, w tym w prowadzeniu własnego biura rachunkowego. Specjalizuję się w obsłudze małych firm, przedszkoli i żłobków.
+Witam na stronie **Magdalena Brzuchalska Biuro Rachunkowe**. Jestem magistrem finansów i rachunkowości Uniwersytetu Morskiego i posiadam ponad 15 lat doświadczenia w księgowości, w tym w prowadzeniu własnego biura rachunkowego. Specjalizuję się w obsłudze małych firm, przedszkoli i żłobków.
 
 ---
 
