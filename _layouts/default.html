@@ -76,13 +76,9 @@
         position: relative;
         height: 100vh;
         min-height: 680px;
-
         display: flex;
         align-items: flex-end;
-
-
         padding: 120px 5% 100px;
-
         color: #fff;
         background: url('{{ "/assets/img/background.png" | relative_url }}') center/cover no-repeat;
       }
@@ -96,7 +92,27 @@
       }
 
       .hero--subpage {
-        min-height: 520px;
+        min-height: 330px;
+      }
+
+      .hero--subpage .hero-content {
+        padding: 5.8rem 0 2.4rem;
+      }
+
+      .hero--subpage .hero-copy {
+        max-width: 620px;
+      }
+
+      .hero--subpage h1 {
+        font-size: clamp(2.3rem, 4vw, 3.6rem);
+        max-width: 14ch;
+        margin-bottom: 0.8rem;
+      }
+
+      .hero--subpage p {
+        font-size: 1.15rem;
+        max-width: 48ch;
+        margin-bottom: 1.2rem;
       }
 
       .hero-shell {
@@ -214,9 +230,9 @@
       }
 
       .content-home {
-        margin-top: -3.2rem;
+        margin-top: -2.8rem;
         position: relative;
-        z-index: 3;
+        z-index: 2;
       }
 
       .feature-strip {
@@ -338,7 +354,7 @@
       }
 
       .content-page {
-        margin-top: -2.7rem;
+        margin-top: 2.2rem;
         position: relative;
         z-index: 3;
       }
@@ -444,7 +460,27 @@
         }
 
         .hero--subpage {
-          min-height: 500px;
+          min-height: 330px;
+        }
+
+        .hero--subpage .hero-content {
+          padding: 5.8rem 0 2.4rem;
+        }
+
+        .hero--subpage .hero-copy {
+          max-width: 620px;
+        }
+
+        .hero--subpage h1 {
+          font-size: clamp(2.3rem, 4vw, 3.6rem);
+          max-width: 14ch;
+          margin-bottom: 0.8rem;
+        }
+
+        .hero--subpage p {
+          font-size: 1.15rem;
+          max-width: 48ch;
+          margin-bottom: 1.2rem;
         }
 
         .hero-content {
@@ -455,9 +491,12 @@
           grid-template-columns: 1fr;
         }
 
-        .content-home,
-        .content-page {
+        .content-home {
           margin-top: -1.8rem;
+        }
+
+        .content-page {
+          margin-top: 1.6rem;
         }
       }
     </style>
