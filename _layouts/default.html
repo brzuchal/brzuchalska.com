@@ -19,122 +19,165 @@
     {% seo %}
     <style>
       :root {
-        --bg: #f5f5f3;
+        --bg: #f2f1ed;
         --surface: #ffffff;
-        --ink: #161616;
-        --ink-soft: #4f4f4f;
-        --line: #d9d9d9;
-        --accent: #c9a24e;
-        --dark: #0f1115;
-        --dark-soft: #1d222c;
+        --surface-muted: #f7f4eb;
+        --ink: #16171b;
+        --ink-soft: #4d5059;
+        --line: #d8d4ca;
+        --accent: #d3af63;
+        --accent-soft: #f3e6c7;
+        --dark: #0e121b;
+        --dark-soft: #1a2230;
+        --dark-elev: #232f43;
+        --hero-glow: rgba(211, 175, 99, 0.2);
       }
 
       * { box-sizing: border-box; }
 
       body {
         margin: 0;
-        font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: var(--ink);
         background: var(--bg);
-        line-height: 1.7;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
       }
 
       a {
-        color: #183d63;
+        color: #1d466f;
         text-underline-offset: 0.2em;
       }
 
       .container {
-        width: min(1180px, calc(100% - 2.25rem));
+        width: min(1200px, calc(100% - 2.5rem));
         margin: 0 auto;
       }
 
       .site-header {
-        background: linear-gradient(130deg, var(--dark) 0%, var(--dark-soft) 70%, #252d3a 100%);
+        background:
+          radial-gradient(circle at 10% 18%, var(--hero-glow) 0%, transparent 42%),
+          radial-gradient(circle at 92% 10%, rgba(93, 119, 165, 0.24) 0%, transparent 38%),
+          linear-gradient(132deg, #0b1019 0%, var(--dark-soft) 58%, var(--dark-elev) 100%);
         color: #fff;
+        position: relative;
+        overflow: hidden;
       }
 
       .topbar {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(4px);
       }
 
       .head-row {
-        min-height: 90px;
+        min-height: 110px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 2rem;
       }
 
       .logo img {
-        width: min(420px, 100%);
+        width: min(490px, 100%);
         height: auto;
         display: block;
+        filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.24));
       }
 
       .nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 0.35rem;
+        gap: 0.55rem;
       }
 
       .nav a {
         color: #fff;
         text-decoration: none;
-        font-size: 0.95rem;
-        font-weight: 600;
-        padding: 0.35rem 0.55rem;
-        border-radius: 8px;
-        transition: background-color 0.18s ease;
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        padding: 0.42rem 0.72rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.02);
+        transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
       }
 
       .nav a:hover,
       .nav a:focus-visible {
-        background: rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.12);
+        border-color: rgba(255, 255, 255, 0.4);
+        transform: translateY(-1px);
         outline: none;
       }
 
       .hero {
-        padding: 5.25rem 0 5rem;
+        padding: 6.8rem 0 7rem;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.8rem;
       }
 
       .hero h1 {
         margin: 0;
-        max-width: 18ch;
-        font-size: clamp(2rem, 5vw, 3.8rem);
-        line-height: 1.08;
-        letter-spacing: -0.02em;
+        max-width: 16.5ch;
+        font-size: clamp(2.5rem, 6vw, 4.9rem);
+        line-height: 1.02;
+        letter-spacing: -0.03em;
+        text-wrap: balance;
+        font-weight: 700;
       }
 
       .hero p {
-        margin: 1.1rem 0 0;
-        max-width: 64ch;
-        font-size: clamp(1.02rem, 1.8vw, 1.3rem);
-        color: #e8edf4;
+        margin: 0;
+        max-width: 60ch;
+        font-size: clamp(1.1rem, 2.15vw, 1.45rem);
+        line-height: 1.65;
+        color: #e7ebf2;
       }
 
       .hero-actions {
-        margin-top: 1.7rem;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-note {
+        margin: 0;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.82);
       }
 
       .cta {
         display: inline-block;
-        padding: 0.8rem 1.2rem;
-        border-radius: 10px;
-        background: var(--accent);
+        padding: 0.9rem 1.35rem;
+        border-radius: 12px;
+        background: linear-gradient(175deg, #dfbf7c 0%, var(--accent) 100%);
         color: #171717;
         text-decoration: none;
         font-weight: 700;
+        border: 1px solid rgba(18, 21, 29, 0.22);
+        box-shadow: 0 12px 28px rgba(6, 8, 11, 0.25);
+      }
+
+      .cta:hover,
+      .cta:focus-visible {
+        filter: brightness(1.05);
+        transform: translateY(-1px);
       }
 
       main {
-        padding: 2.2rem 0 3.8rem;
+        padding: 0 0 4.2rem;
       }
 
       .content {
-        display: grid;
-        gap: 1.3rem;
+        margin-top: -2.2rem;
       }
 
       .prose {
@@ -143,60 +186,116 @@
 
       .section {
         background: var(--surface);
-        border-radius: 16px;
-        border: 1px solid #e7e7e7;
-        padding: clamp(1.2rem, 2vw, 2rem);
-        box-shadow: 0 8px 28px rgba(20, 20, 20, 0.05);
+        border-radius: 22px;
+        border: 1px solid #e7e4dc;
+        padding: clamp(1.35rem, 2.2vw, 2.4rem);
+        box-shadow: 0 15px 35px rgba(17, 23, 34, 0.08);
+      }
+
+      .section + .section {
+        margin-top: 1.25rem;
+      }
+
+      .section--flat {
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+      }
+
+      .section--muted {
+        background: var(--surface-muted);
+      }
+
+      .section--dark {
+        background: linear-gradient(145deg, #0f1623 0%, #1a2638 100%);
+        color: #f5f7fb;
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+
+      .section--dark h2,
+      .section--dark h3 {
+        color: #fff;
+      }
+
+      .section--dark p,
+      .section--dark li {
+        color: #dde4ef;
       }
 
       .content h2,
       .content h3,
       .prose h2,
       .prose h3 {
-        line-height: 1.22;
+        line-height: 1.16;
         color: #141414;
+        letter-spacing: -0.018em;
       }
 
       .content h2,
       .prose h2 {
         margin-top: 0;
-        margin-bottom: 0.85rem;
-        font-size: clamp(1.45rem, 2.6vw, 2.15rem);
+        margin-bottom: 0.95rem;
+        font-size: clamp(1.52rem, 2.9vw, 2.35rem);
       }
 
       .content h3,
       .prose h3 {
-        margin: 0 0 0.6rem;
-        font-size: 1.2rem;
+        margin: 0 0 0.55rem;
+        font-size: clamp(1.12rem, 2vw, 1.34rem);
       }
 
       .content p,
       .content li,
       .prose p,
       .prose li {
-        font-size: 1.06rem;
+        font-size: clamp(1rem, 1.2vw, 1.08rem);
+        margin-top: 0.35rem;
       }
 
       .content ul,
       .prose ul {
-        margin-top: 0.45rem;
+        margin-top: 0.65rem;
       }
 
       .siatka {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 1rem;
+        gap: 1.05rem;
       }
 
       .karta {
-        border: 1px solid #ece7da;
-        background: linear-gradient(180deg, #fffefb 0%, #fff 100%);
-        border-radius: 14px;
-        padding: 1.05rem;
+        border: 1px solid #e8dfcc;
+        background: linear-gradient(180deg, #fffdfa 0%, #ffffff 100%);
+        border-radius: 16px;
+        padding: 1.2rem 1.15rem;
+      }
+
+      .section--dark .karta {
+        border-color: rgba(255, 255, 255, 0.12);
+        background: linear-gradient(170deg, rgba(10, 13, 21, 0.56) 0%, rgba(20, 30, 45, 0.62) 100%);
+      }
+
+      .section--dark .karta h3 {
+        color: #fff;
+      }
+
+      .section--dark .karta p {
+        color: #dbe5f3;
       }
 
       .kontakt-box {
-        border-left: 4px solid var(--accent);
+        background: linear-gradient(145deg, #121a28 0%, #1d2a40 100%);
+        color: #edf2fa;
+        border-color: rgba(255, 255, 255, 0.14);
+      }
+
+      .kontakt-box h2 {
+        color: #fff;
+      }
+
+      .kontakt-box p,
+      .kontakt-box li {
+        color: #dde6f4;
       }
 
       .kontakt-list {
@@ -210,7 +309,7 @@
       }
 
       footer {
-        background: #fff;
+        background: #f7f6f2;
         border-top: 1px solid var(--line);
         color: var(--ink-soft);
       }
@@ -223,7 +322,7 @@
       @media (max-width: 920px) {
         .head-row {
           align-items: flex-start;
-          padding: 0.8rem 0;
+          padding: 1rem 0;
           flex-direction: column;
         }
 
@@ -232,8 +331,39 @@
         }
 
         .hero {
-          padding-top: 3.6rem;
-          padding-bottom: 3.6rem;
+          padding-top: 4.3rem;
+          padding-bottom: 5rem;
+        }
+
+        .content {
+          margin-top: -1.45rem;
+        }
+      }
+
+      @media (min-width: 930px) {
+        .hero-grid {
+          grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+          align-items: end;
+          gap: 2.5rem;
+        }
+
+        .hero-aside {
+          padding: 1.1rem 1.2rem;
+          border-radius: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          background: rgba(10, 13, 21, 0.36);
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+        }
+
+        .hero-aside p {
+          margin: 0;
+          font-size: 0.98rem;
+          line-height: 1.6;
+          color: rgba(235, 241, 250, 0.9);
+        }
+
+        .hero-aside strong {
+          color: #fff;
         }
       }
     </style>
@@ -260,13 +390,23 @@
       </div>
       <div class="hero">
         <div class="container">
-          <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
-          <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
-          {% if page.url == "/" %}
-            <div class="hero-actions">
-              <a class="cta" href="/kontakt/">Umów rozmowę</a>
+          <div class="hero-grid">
+            <div>
+              <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
+              <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
+              {% if page.url == "/" %}
+                <div class="hero-actions">
+                  <a class="cta" href="/kontakt/">Umów rozmowę</a>
+                  <p class="hero-note">Reda · Rumia · Wejherowo · online</p>
+                </div>
+              {% endif %}
             </div>
-          {% endif %}
+            {% if page.url == "/" %}
+              <aside class="hero-aside" aria-label="Najważniejsze informacje">
+                <p><strong>15+ lat doświadczenia</strong><br>Obsługa KPiR, ryczałtu, kadr i płac oraz rozliczeń placówek oświatowych.</p>
+              </aside>
+            {% endif %}
+          </div>
         </div>
       </div>
     </header>

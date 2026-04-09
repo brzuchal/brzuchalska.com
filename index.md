@@ -7,13 +7,13 @@ hero_title: "Profesjonalna księgowość i kadry dla małych firm"
 hero_lead: "Wspieram przedsiębiorców oraz placówki oświatowe z Redy, Rumii i Wejherowa. Ponad 15 lat doświadczenia, przejrzysta współpraca i stały kontakt."
 ---
 
-<section class="section" markdown="1">
+<section class="section section--muted" markdown="1">
 ## Doświadczenie i specjalizacja
 
 Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księgowość dla małych firm. Specjalizuję się w obsłudze działalności rozliczanych przez **KPiR** i **ryczałt**, a także w obszarze **kadr i płac**. Prowadzę również rozliczenia dla **przedszkoli i żłobków**, w tym rozliczanie dotacji.
 </section>
 
-<section class="section" markdown="1">
+<section class="section section--flat" markdown="1">
 ## Dlaczego warto
 
 <div class="siatka">
@@ -32,7 +32,7 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 </div>
 </section>
 
-<section class="section" markdown="1">
+<section class="section section--dark" markdown="1">
 ## Zakres usług
 
 <div class="siatka">
@@ -51,7 +51,7 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 </div>
 </section>
 
-<section class="section" markdown="1">
+<section class="section section--muted" markdown="1">
 ## Obszar obsługi: Reda, Rumia, Wejherowo
 
 - [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/)
@@ -64,7 +64,8 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 <section class="section kontakt-box" markdown="1">
 ## Kontakt
 
-**Biuro Rachunkowe Magdalena Brzuchalska**  
+**Biuro Rachunkowe Magdalena Brzuchalska** wspiera przedsiębiorców i placówki edukacyjne w codziennych rozliczeniach. Jeśli szukasz spokojnej, merytorycznej współpracy, zapraszam do kontaktu.
+
 84-240 Reda, Wiklinowa 19
 
 - E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
