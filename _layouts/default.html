@@ -19,406 +19,392 @@
     {% seo %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg: #f7f4ed;
+        --bg: #f6f2ea;
         --surface: #ffffff;
-        --surface-muted: #f9f3e7;
-        --ink: #222222;
-        --ink-soft: #4b4b4b;
-        --line: #ddd3c0;
-        --accent: #a98745;
-        --accent-soft: #ece1c7;
-        --dark: #ebe3d4;
-        --dark-soft: #e8dfd0;
-        --dark-elev: #efe7d9;
-        --hero-glow: rgba(169, 135, 69, 0.12);
+        --surface-soft: #f8f3e8;
+        --ink: #1f1f1f;
+        --ink-soft: #555;
+        --line: #e2d8c4;
+        --hero-dark: #19150f;
+        --hero-dark-soft: rgba(26, 21, 14, 0.82);
+        --hero-dark-light: rgba(26, 21, 14, 0.56);
+        --accent: #b68a3b;
+        --accent-hover: #a77c30;
       }
 
       * { box-sizing: border-box; }
 
       body {
         margin: 0;
-        font-family: "Alice", Georgia, serif;
+        font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
         color: var(--ink);
         background: var(--bg);
         line-height: 1.7;
         -webkit-font-smoothing: antialiased;
       }
 
+      h1, h2, h3 {
+        margin-top: 0;
+        color: #181818;
+        font-family: "Alice", Georgia, serif;
+        font-weight: 400;
+        line-height: 1.18;
+      }
+
+      p { margin-top: 0; }
+
       a {
-        color: #785600;
+        color: #6f4f16;
         text-underline-offset: 0.2em;
       }
 
       .container {
-        width: min(1200px, calc(100% - 2.5rem));
+        width: min(1180px, calc(100% - 2.5rem));
         margin: 0 auto;
       }
 
       .site-header {
-        background:
-          radial-gradient(circle at 10% 18%, var(--hero-glow) 0%, transparent 46%),
-          radial-gradient(circle at 92% 10%, rgba(169, 135, 69, 0.14) 0%, transparent 42%),
-          linear-gradient(132deg, var(--dark) 0%, var(--dark-soft) 58%, var(--dark-elev) 100%);
-        color: #2d2b28;
+        color: #f4f0e8;
         position: relative;
-        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .hero {
+        position: relative;
+        background-image:
+          linear-gradient(105deg, var(--hero-dark-soft) 0%, var(--hero-dark-light) 58%, rgba(20, 16, 11, 0.76) 100%),
+          url('/assets/img/background.png');
+        background-size: cover;
+        background-position: center right;
+        min-height: 620px;
+        display: flex;
+        align-items: stretch;
+      }
+
+      .hero--subpage {
+        min-height: 430px;
+      }
+
+      .hero-shell {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
       }
 
       .topbar {
-        border-bottom: 1px solid rgba(90, 76, 50, 0.14);
+        padding-top: 1.2rem;
       }
 
       .head-row {
-        min-height: 110px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1.2rem;
+        border: 1px solid rgba(244, 240, 232, 0.25);
+        background: rgba(23, 18, 13, 0.28);
+        backdrop-filter: blur(3px);
+        border-radius: 16px;
+        padding: 0.85rem 1.1rem;
       }
 
       .logo img {
-        width: min(490px, 100%);
+        width: min(460px, 100%);
         height: auto;
         display: block;
-        filter: none;
       }
 
       .nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 0.55rem;
+        gap: 0.8rem;
       }
 
       .nav a {
-        color: #3f3423;
+        color: #f5efe3;
         text-decoration: none;
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 0;
-        padding: 0.18rem 0.35rem;
+        font-size: 0.95rem;
+        padding: 0.2rem 0.1rem;
         border-bottom: 1px solid transparent;
-        transition: color 0.18s ease, border-color 0.18s ease;
+        transition: border-color 0.2s ease, color 0.2s ease;
       }
 
       .nav a:hover,
       .nav a:focus-visible {
-        color: #6e572c;
-        border-color: rgba(110, 87, 44, 0.45);
+        border-color: rgba(244, 240, 232, 0.65);
+        color: #fff;
         outline: none;
       }
 
-      .hero {
-        padding: 4.6rem 0 4.9rem;
+      .hero-content {
+        margin: auto 0;
+        padding: 3.8rem 0 5.4rem;
       }
 
-      .hero-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        gap: 1.8rem;
+      .hero-copy {
+        max-width: 700px;
       }
 
       .hero h1 {
-        margin: 0;
-        max-width: 20ch;
-        font-family: "Alice", Georgia, serif;
-        font-size: clamp(2.05rem, 4.6vw, 3.25rem);
-        line-height: 1.2;
-        letter-spacing: 0;
+        color: #fff;
+        font-size: clamp(2.1rem, 5vw, 4rem);
+        max-width: 16ch;
         text-wrap: balance;
-        font-weight: 400;
+        margin-bottom: 1rem;
       }
 
       .hero p {
-        margin: 0;
+        color: rgba(249, 245, 237, 0.95);
+        font-size: clamp(1.05rem, 1.8vw, 1.32rem);
+        line-height: 1.75;
         max-width: 60ch;
-        font-size: clamp(1.12rem, 2vw, 1.32rem);
-        line-height: 1.7;
-        color: #3f3a34;
+        margin-bottom: 1.7rem;
       }
 
-      .hero-actions {
-        margin-top: 0.5rem;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .hero-note {
-        margin: 0;
-        font-size: 1rem;
-        color: #5a4a30;
+      .hero-meta {
+        color: rgba(248, 242, 233, 0.88);
+        font-size: 0.98rem;
       }
 
       .cta {
-        display: inline-block;
-        padding: 0.62rem 1rem;
-        border-radius: 4px;
-        background: var(--accent-soft);
-        color: #4e3d20;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
-        font-weight: 400;
-        border: 1px solid rgba(138, 114, 64, 0.35);
-        box-shadow: none;
+        padding: 0.78rem 1.4rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 224, 161, 0.6);
+        background: var(--accent);
+        color: #24180c;
+        font-weight: 600;
+        transition: background 0.2s ease, transform 0.2s ease;
       }
 
       .cta:hover,
       .cta:focus-visible {
-        filter: brightness(0.98);
+        background: var(--accent-hover);
+        transform: translateY(-1px);
+        outline: none;
       }
 
       main {
-        padding: 0 0 4.2rem;
+        padding: 0 0 4rem;
       }
 
-      .content {
-        margin-top: -0.8rem;
+      .content-home {
+        margin-top: -2.8rem;
+        position: relative;
+        z-index: 2;
       }
 
-      .prose {
-        padding: clamp(1.2rem, 2.2vw, 2.2rem);
+      .feature-band {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 14px 36px rgba(44, 33, 15, 0.08);
+        padding: clamp(1.45rem, 2.8vw, 2.4rem);
+      }
+
+      .feature-band__intro {
+        margin-bottom: 1.2rem;
+        max-width: 62ch;
+      }
+
+      .feature-band__intro h2 {
+        font-size: clamp(1.55rem, 3vw, 2.2rem);
+        margin-bottom: 0.55rem;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .feature-item {
+        background: #fffdf8;
+        border: 1px solid #eadfca;
+        border-radius: 12px;
+        padding: 1rem;
+      }
+
+      .feature-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .feature-item p {
+        margin: 0;
+        font-size: 0.98rem;
+        color: #4b4b4b;
       }
 
       .section {
+        margin-top: 1.4rem;
         background: var(--surface);
-        border-radius: 8px;
-        border: 1px solid #e4dac8;
-        padding: clamp(1.35rem, 2.2vw, 2.4rem);
-        box-shadow: none;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: clamp(1.25rem, 2.2vw, 2.1rem);
       }
 
-      .section + .section {
-        margin-top: 1.25rem;
+      .section--soft {
+        background: var(--surface-soft);
       }
 
-      .section--flat {
-        border-radius: 0;
-        border: none;
-        box-shadow: none;
+      .section h2 {
+        font-size: clamp(1.45rem, 2.5vw, 2rem);
+        margin-bottom: 0.7rem;
       }
 
-      .section--muted {
-        background: var(--surface-muted);
+      .section p,
+      .section li {
+        font-size: 1.02rem;
+        color: #333;
       }
 
-      .section--dark {
-        background: #f6efe1;
-        color: var(--ink);
-        border-color: #e0d3bc;
+      .tile-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.95rem;
       }
 
-      .section--dark h2,
-      .section--dark h3 {
-        color: #1f1f1f;
+      .tile {
+        background: #fff;
+        border: 1px solid #e8dcc8;
+        border-radius: 12px;
+        padding: 1rem;
       }
 
-      .section--dark p,
-      .section--dark li {
-        color: #343434;
+      .tile h3 {
+        font-size: 1.18rem;
+        margin-bottom: 0.45rem;
       }
 
-      .content h2,
-      .content h3,
-      .prose h2,
-      .prose h3 {
-        line-height: 1.3;
-        color: #141414;
-        letter-spacing: 0;
-        font-weight: 400;
+      .prose {
+        margin-top: -1.6rem;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: clamp(1.4rem, 2.5vw, 2.4rem);
+        box-shadow: 0 14px 32px rgba(44, 33, 15, 0.05);
       }
 
-      .content h2,
       .prose h2 {
+        font-size: clamp(1.38rem, 2.2vw, 1.9rem);
+        margin: 1.35rem 0 0.65rem;
+      }
+
+      .prose h2:first-child {
         margin-top: 0;
-        margin-bottom: 0.85rem;
-        font-size: clamp(1.4rem, 2.5vw, 2rem);
       }
 
-      .content h3,
-      .prose h3 {
-        margin: 0 0 0.5rem;
-        font-size: clamp(1.1rem, 1.8vw, 1.28rem);
-      }
-
-      .content p,
-      .content li,
       .prose p,
       .prose li {
-        font-size: clamp(1.06rem, 1.25vw, 1.16rem);
-        line-height: 1.72;
-        margin-top: 0.35rem;
-      }
-
-      .content ul,
-      .prose ul {
-        margin-top: 0.65rem;
-      }
-
-      .siatka {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 1.05rem;
-      }
-
-      .karta {
-        border: 1px solid #e6dcc8;
-        background: #fffdfa;
-        border-radius: 6px;
-        padding: 1.2rem 1.15rem;
-      }
-
-      .section--dark .karta {
-        border-color: #deceaf;
-        background: #fffaf0;
-      }
-
-      .section--dark .karta h3 {
-        color: #2b2b2b;
-      }
-
-      .section--dark .karta p {
-        color: #3f3f3f;
-      }
-
-      .kontakt-box {
-        background: #f6efe1;
-        color: var(--ink);
-        border-color: #e0d3bc;
-      }
-
-      .kontakt-box h2 {
-        color: #1f1f1f;
-      }
-
-      .kontakt-box p,
-      .kontakt-box li {
-        color: #323232;
-      }
-
-      .kontakt-list {
-        list-style: none;
-        margin: 0.5rem 0 0;
-        padding: 0;
-      }
-
-      .kontakt-list li + li {
-        margin-top: 0.25rem;
+        color: #333;
       }
 
       footer {
-        background: #f8f4eb;
         border-top: 1px solid var(--line);
-        color: var(--ink-soft);
+        background: #fbf7ef;
       }
 
       .footer-inner {
-        padding: 1.15rem 0 2rem;
-        font-size: 0.96rem;
+        padding: 1.2rem 0 2rem;
+        color: var(--ink-soft);
+        font-size: 0.95rem;
       }
 
-      @media (max-width: 920px) {
+      @media (max-width: 1040px) {
         .head-row {
-          align-items: flex-start;
-          padding: 1rem 0;
           flex-direction: column;
+          align-items: flex-start;
         }
 
         .nav {
           justify-content: flex-start;
         }
 
-        .hero {
-          padding-top: 3.5rem;
-          padding-bottom: 4rem;
-        }
-
-        .content {
-          margin-top: -0.65rem;
+        .feature-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
 
-      @media (min-width: 930px) {
-        .hero-grid {
-          grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
-          align-items: end;
-          gap: 2.5rem;
+      @media (max-width: 740px) {
+        .container {
+          width: min(1180px, calc(100% - 1.5rem));
         }
 
-        .hero-aside {
-          padding: 1.1rem 1.2rem;
-          border-radius: 6px;
-          border: 1px solid rgba(120, 95, 51, 0.22);
-          background: rgba(255, 250, 241, 0.75);
-          box-shadow: none;
+        .hero {
+          min-height: 560px;
+          background-position: center;
         }
 
-        .hero-aside p {
-          margin: 0;
-          font-size: 1rem;
-          line-height: 1.7;
-          color: #3b3327;
+        .hero--subpage {
+          min-height: 390px;
         }
 
-        .hero-aside strong {
-          color: #2a241a;
+        .hero-content {
+          padding: 2.8rem 0 4.4rem;
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .content-home {
+          margin-top: -2rem;
         }
       }
     </style>
   </head>
   <body>
+    {% assign is_home = page.url == "/" %}
     <header class="site-header">
-      <div class="topbar">
-        <div class="container">
-          <div class="head-row">
-            <a class="logo" href="/" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
-              <img src="/assets/img/noBgWhite.png" alt="Biuro Rachunkowe Magdalena Brzuchalska">
-            </a>
-            <nav class="nav" aria-label="Nawigacja główna">
-              <a href="/">Strona główna</a>
-              <a href="/biuro-rachunkowe-reda/">Reda</a>
-              <a href="/ksiegowosc-rumia/">Rumia</a>
-              <a href="/ksiegowosc-wejherowo/">Wejherowo</a>
-              <a href="/ksiegowosc-dla-przedszkoli/">Przedszkola i żłobki</a>
-              <a href="/faq/">FAQ</a>
-              <a href="/kontakt/">Kontakt</a>
-            </nav>
+      <div class="hero {% unless is_home %}hero--subpage{% endunless %}">
+        <div class="container hero-shell">
+          <div class="topbar">
+            <div class="head-row">
+              <a class="logo" href="/" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
+                <img src="/assets/img/noBgWhite.png" alt="Biuro Rachunkowe Magdalena Brzuchalska">
+              </a>
+              <nav class="nav" aria-label="Nawigacja główna">
+                <a href="/">Strona główna</a>
+                <a href="/biuro-rachunkowe-reda/">Reda</a>
+                <a href="/ksiegowosc-rumia/">Rumia</a>
+                <a href="/ksiegowosc-wejherowo/">Wejherowo</a>
+                <a href="/ksiegowosc-dla-przedszkoli/">Przedszkola i żłobki</a>
+                <a href="/faq/">FAQ</a>
+                <a href="/kontakt/">Kontakt</a>
+              </nav>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="hero">
-        <div class="container">
-          <div class="hero-grid">
-            <div>
+
+          <div class="hero-content">
+            <div class="hero-copy">
               <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
               <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
-              {% if page.url == "/" %}
-                <div class="hero-actions">
-                  <a class="cta" href="/kontakt/">Umów rozmowę</a>
-                  <p class="hero-note">Reda · Rumia · Wejherowo · online</p>
-                </div>
+              {% if is_home %}
+                <a class="cta" href="/kontakt/">Umów rozmowę</a>
+                <p class="hero-meta">Reda · Rumia · Wejherowo · współpraca lokalnie i online</p>
+              {% else %}
+                <a class="cta" href="/kontakt/">Skontaktuj się</a>
               {% endif %}
             </div>
-            {% if page.url == "/" %}
-              <aside class="hero-aside" aria-label="Najważniejsze informacje">
-                <p><strong>15+ lat doświadczenia</strong><br>Obsługa KPiR, ryczałtu, kadr i płac oraz rozliczeń placówek oświatowych.</p>
-              </aside>
-            {% endif %}
           </div>
         </div>
       </div>
     </header>
 
     <main class="container">
-      {% if page.url == "/" %}
-        <div class="content">
+      {% if is_home %}
+        <div class="content-home">
           {{ content }}
         </div>
       {% else %}
-        <article class="section prose">
+        <article class="prose">
           {{ content }}
         </article>
       {% endif %}

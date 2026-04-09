@@ -7,51 +7,57 @@ hero_title: "Profesjonalna księgowość i kadry dla małych firm"
 hero_lead: "Wspieram przedsiębiorców oraz placówki oświatowe z Redy, Rumii i Wejherowa. Ponad 15 lat doświadczenia, przejrzysta współpraca i stały kontakt."
 ---
 
-<section class="section section--muted" markdown="1">
+<section class="feature-band" aria-label="Najważniejsze obszary wsparcia">
+  <div class="feature-band__intro">
+    <h2>Księgowość, która daje spokój na co dzień</h2>
+    <p>Zapewniam rzetelną obsługę finansową i kadrową z naciskiem na terminowość, jasną komunikację i bezpieczeństwo rozliczeń.</p>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-item">
+      <h3>KPiR i ryczałt</h3>
+      <p>Kompleksowe prowadzenie rozliczeń dla małych firm działających w różnych branżach.</p>
+    </article>
+    <article class="feature-item">
+      <h3>Kadry i płace</h3>
+      <p>Przejrzysta obsługa dokumentacji pracowniczej, umów oraz bieżących obowiązków kadrowych.</p>
+    </article>
+    <article class="feature-item">
+      <h3>Placówki edukacyjne</h3>
+      <p>Specjalistyczna księgowość dla przedszkoli i żłobków wraz z rozliczaniem dotacji.</p>
+    </article>
+    <article class="feature-item">
+      <h3>Stały kontakt</h3>
+      <p>Wsparcie i odpowiedzi na bieżąco, aby decyzje finansowe podejmować spokojnie i świadomie.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section--soft" markdown="1">
 ## Doświadczenie i specjalizacja
 
 Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księgowość dla małych firm. Specjalizuję się w obsłudze działalności rozliczanych przez **KPiR** i **ryczałt**, a także w obszarze **kadr i płac**. Prowadzę również rozliczenia dla **przedszkoli i żłobków**, w tym rozliczanie dotacji.
 </section>
 
-<section class="section section--flat" markdown="1">
-## Dlaczego warto
-
-<div class="siatka">
-  <article class="karta">
-    <h3>Indywidualne podejście</h3>
-    <p>Zakres obsługi dopasowuję do skali działalności, branży i sposobu pracy klienta.</p>
-  </article>
-  <article class="karta">
-    <h3>Praktyczne doświadczenie</h3>
-    <p>Ponad 15 lat pracy z małymi firmami oraz placówkami edukacyjnymi.</p>
-  </article>
-  <article class="karta">
-    <h3>Bezpieczeństwo danych</h3>
-    <p>Dokumenty i rozliczenia prowadzę terminowo, z naciskiem na poufność i zgodność formalną.</p>
-  </article>
-</div>
-</section>
-
-<section class="section section--dark" markdown="1">
+<section class="section" markdown="1">
 ## Zakres usług
 
-<div class="siatka">
-  <article class="karta">
+<div class="tile-grid">
+  <article class="tile">
     <h3>Księgowość KPiR i ryczałt</h3>
-    <p>Prowadzenie ewidencji, rozliczenia ZUS i US, bieżące wsparcie księgowe.</p>
+    <p>Prowadzenie ewidencji, rozliczenia ZUS i US oraz bieżące wsparcie księgowe dopasowane do działalności.</p>
   </article>
-  <article class="karta">
+  <article class="tile">
     <h3>Kadry i płace</h3>
-    <p>Dokumentacja pracownicza, umowy, listy płac oraz obsługa spraw kadrowych.</p>
+    <p>Dokumentacja pracownicza, umowy, listy płac i pełna obsługa spraw kadrowych.</p>
   </article>
-  <article class="karta">
+  <article class="tile">
     <h3>Rozliczenia placówek</h3>
     <p>Księgowość dla przedszkoli i żłobków, w tym rozliczanie dotacji oświatowych.</p>
   </article>
 </div>
 </section>
 
-<section class="section section--muted" markdown="1">
+<section class="section section--soft" markdown="1">
 ## Obszar obsługi: Reda, Rumia, Wejherowo
 
 - [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/)
@@ -61,7 +67,7 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 - [Najczęstsze pytania (FAQ)](/faq/)
 </section>
 
-<section class="section kontakt-box" markdown="1">
+<section class="section" markdown="1">
 ## Kontakt
 
 **Biuro Rachunkowe Magdalena Brzuchalska** wspiera przedsiębiorców i placówki edukacyjne w codziennych rozliczeniach. Jeśli szukasz spokojnej, merytorycznej współpracy, zapraszam do kontaktu.
