@@ -54,7 +54,7 @@ Najczęściej współpracuję z klientami lokalnymi, dzięki czemu kontakt i wym
 **Biuro Rachunkowe Magdalena Brzuchalska**  
 84-240 Reda, Wiklinowa 19  
 E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)  
-Telefon: [+48 502 093 929](tel:+48502093929)
+Telefon: [+48 503 095 915](tel:+48503095915)
 
 Jeżeli chcesz rozpocząć współpracę, napisz lub zadzwoń — omówimy zakres obsługi i sposób przekazywania dokumentów.
 
@@ -65,7 +65,7 @@ Jeżeli chcesz rozpocząć współpracę, napisz lub zadzwoń — omówimy zakre
   "name": "Biuro Rachunkowe Magdalena Brzuchalska",
   "url": "https://brzuchalska.com/",
   "email": "magdalena@brzuchalska.com",
-  "telephone": "+48 502 093 929",
+  "telephone": "+48 503 095 915",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Wiklinowa 19",
