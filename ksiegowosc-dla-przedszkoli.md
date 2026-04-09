@@ -29,4 +29,4 @@ Placówka zyskuje uporządkowane dokumenty, mniejsze ryzyko błędów i stały k
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
 - [+48 503 092 915](tel:+48503092915)
 
-Dodatkowo: [FAQ](/faq/) oraz [Strona główna](/).
+Dodatkowo: [FAQ]({{ '/faq/' | relative_url }}) oraz [Strona główna]({{ '/' | relative_url }}).

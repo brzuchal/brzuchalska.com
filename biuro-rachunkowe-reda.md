@@ -30,4 +30,4 @@ Współpracuję głównie z jednoosobowymi działalnościami oraz małymi firmam
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
 - [+48 503 092 915](tel:+48503092915)
 
-Powiązane strony: [Księgowość Rumia](/ksiegowosc-rumia/), [Księgowość Wejherowo](/ksiegowosc-wejherowo/), [Kontakt](/kontakt/).
+Powiązane strony: [Księgowość Rumia]({{ '/ksiegowosc-rumia/' | relative_url }}), [Księgowość Wejherowo]({{ '/ksiegowosc-wejherowo/' | relative_url }}), [Kontakt]({{ '/kontakt/' | relative_url }}).
