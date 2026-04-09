@@ -1,50 +1,92 @@
-# Biuro Rachunkowe Magdalena Brzuchalska
-
-## Profesjonalna księgowość i kadry dla małych firm
-
-Witam na stronie **Magdalena Brzuchalska Biuro Rachunkowe**. Jestem magistrem finansów i rachunkowości Uniwersytetu Morskiego i posiadam ponad 15 lat doświadczenia w księgowości, w tym w prowadzeniu własnego biura rachunkowego. Specjalizuję się w obsłudze małych firm, przedszkoli i żłobków.
-
+---
+layout: default
+title: Biuro Rachunkowe Reda – księgowość dla małych firm | Magdalena Brzuchalska
+description: Biuro Rachunkowe Magdalena Brzuchalska w Redzie. Księgowość dla małych firm, KPiR, ryczałt, kadry i płace oraz rozliczenia przedszkoli i żłobków w Redzie, Rumii i Wejherowie.
+permalink: /
 ---
 
-### Nasze Usługi
+# Biuro rachunkowe w Redzie dla małych firm, przedszkoli i żłobków
 
-- **Księgowość KPiR i Ryczałt**  
-  - Prowadzenie KPiR oraz ryczałtu dla małych firm.
-  - Sporządzanie sprawozdań podatkowych.
-  - Regularne rozliczenia z ZUS i US.
+Biuro Rachunkowe Magdalena Brzuchalska to lokalna księgowość w Redzie. Wspieram przedsiębiorców z Redy, Rumii i Wejherowa w codziennych rozliczeniach, kadrach i płacach oraz w obsłudze dokumentacji podatkowej.
 
-- **Usługi Kadrowe i Płacowe**  
-  - Prowadzenie dokumentacji pracowniczej.
-  - Przygotowanie list płac, umów oraz doradztwo w zakresie prawa pracy.
+## Dla kogo pracuję
 
-- **Rozliczanie Dotacji Gminnych dla Przedszkoli i Żłobków**  
-  - Pomoc w zarządzaniu i rozliczaniu dotacji.
+- dla jednoosobowych działalności i małych firm,
+- dla właścicieli firm rozliczających się przez **KPiR** lub **ryczałt**,
+- dla przedszkoli i żłobków, które potrzebują bieżącej księgowości i wsparcia przy dotacjach.
 
-- **Jednorazowe Rozliczenia**  
-  - Oferuję możliwość skorzystania z jednorazowych rozliczeń.
+## Usługi księgowe
 
----
+### Księgowość dla małych firm
+- prowadzenie KPiR,
+- rozliczenia ryczałtu,
+- rozliczenia ZUS i US,
+- bieżące wsparcie w sprawach księgowych.
 
-### Doświadczenie Zawodowe
+### Kadry i płace
+- dokumentacja pracownicza,
+- listy płac i umowy,
+- rozliczenia kadrowo-płacowe dla małych podmiotów.
 
-- **Młodszy Księgowy** w Biurze Rachunkowym Dana, Rumia (2007-2015)
-- **Księgowy** w BW Biuro Rachunkowe, Reda (2015-2017)
-- **Właścicielka** własnego biura rachunkowego od 2017 roku
+### Obsługa przedszkoli i żłobków
+- księgowość dla placówek niepublicznych,
+- rozliczanie dotacji oświatowych,
+- uporządkowanie dokumentacji wymaganej przez organy prowadzące.
 
----
+### Jednorazowe rozliczenia
+Oferuję także jednorazowe wsparcie rozliczeniowe, gdy potrzebujesz pomocy w konkretnej sprawie.
 
-### Dlaczego Warto Wybrać Moje Biuro?
+## Obszar obsługi: Reda, Rumia, Wejherowo
 
-- **Indywidualne podejście** – dostosowuję usługi do potrzeb każdej firmy.
-- **Doświadczenie** – ponad 15 lat praktyki w księgowości, obsługa małych firm, przedszkoli i żłobków.
-- **Bezpieczeństwo i dyskrecja** – gwarantuję poufność danych.
+Najczęściej współpracuję z klientami lokalnymi, dzięki czemu kontakt i wymiana dokumentów przebiegają sprawnie.
 
----
+- [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/)
+- [Księgowość Rumia](/ksiegowosc-rumia/)
+- [Księgowość Wejherowo](/ksiegowosc-wejherowo/)
 
-### Kontakt
+## Specjalizacje
 
-**Magdalena Brzuchalski**  
-Email: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)  
-Telefon: [502 093 929](tel:+48502093929)
+- [Księgowość dla przedszkoli i żłobków](/ksiegowosc-dla-przedszkoli/)
+- [Najczęstsze pytania (FAQ)](/faq/)
 
-Skontaktuj się, aby uzyskać indywidualną wycenę!
+## Kontakt
+
+**Biuro Rachunkowe Magdalena Brzuchalska**  
+84-240 Reda, Wiklinowa 19  
+E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)  
+Telefon: [+48 502 093 929](tel:+48502093929)
+
+Jeżeli chcesz rozpocząć współpracę, napisz lub zadzwoń — omówimy zakres obsługi i sposób przekazywania dokumentów.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Biuro Rachunkowe Magdalena Brzuchalska",
+  "url": "https://brzuchalska.com/",
+  "email": "magdalena@brzuchalska.com",
+  "telephone": "+48 502 093 929",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wiklinowa 19",
+    "postalCode": "84-240",
+    "addressLocality": "Reda",
+    "addressCountry": "PL"
+  },
+  "areaServed": [
+    "Reda",
+    "Rumia",
+    "Wejherowo"
+  ],
+  "serviceType": [
+    "Księgowość dla małych firm",
+    "KPiR",
+    "Ryczałt",
+    "Kadry i płace",
+    "Księgowość dla przedszkoli",
+    "Księgowość dla żłobków",
+    "Rozliczanie dotacji oświatowych",
+    "Jednorazowe rozliczenia"
+  ]
+}
+</script>
