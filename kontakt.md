@@ -13,7 +13,7 @@ hero_lead: "Napisz lub zadzwoń, aby omówić zakres obsługi księgowej dla Two
 84-240 Reda, Wiklinowa 19
 
 - E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
-- Telefon: [+48 502 093 929](tel:+48502093929)
+- Telefon: [+48 503 095 915](tel:+48503095915)
 
 ## Obszar współpracy
 
