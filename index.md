@@ -7,6 +7,27 @@ hero_title: "Profesjonalna księgowość i kadry dla małych firm"
 hero_lead: "Wspieram przedsiębiorców oraz placówki oświatowe z Redy, Rumii i Wejherowa. Ponad 15 lat doświadczenia, przejrzysta współpraca i stały kontakt."
 ---
 
+<section class="feature-strip">
+  <div class="feature-strip-grid">
+    <div class="feature-strip-item">
+      <strong>Bieżąca księgowość</strong>
+      <span>KPiR i ryczałt</span>
+    </div>
+    <div class="feature-strip-item">
+      <strong>Rozliczenia</strong>
+      <span>dotacji oświatowych</span>
+    </div>
+    <div class="feature-strip-item">
+      <strong>Kadry i płace</strong>
+      <span>umowy, listy płac</span>
+    </div>
+    <div class="feature-strip-item">
+      <strong>Bezpieczeństwo</strong>
+      <span>danych i dyskrecja</span>
+    </div>
+  </div>
+</section>
+
 <section class="feature-band" aria-label="Najważniejsze obszary wsparcia">
   <div class="feature-band__intro">
     <h2>Księgowość, która daje spokój na co dzień</h2>
