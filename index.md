@@ -7,13 +7,13 @@ hero_title: "Profesjonalna księgowość i kadry dla małych firm"
 hero_lead: "Wspieram przedsiębiorców oraz placówki oświatowe z Redy, Rumii i Wejherowa. Ponad 15 lat doświadczenia, przejrzysta współpraca i stały kontakt."
 ---
 
-<section>
+<section class="section" markdown="1">
 ## Doświadczenie i specjalizacja
 
 Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księgowość dla małych firm. Specjalizuję się w obsłudze działalności rozliczanych przez **KPiR** i **ryczałt**, a także w obszarze **kadr i płac**. Prowadzę również rozliczenia dla **przedszkoli i żłobków**, w tym rozliczanie dotacji.
 </section>
 
-<section>
+<section class="section" markdown="1">
 ## Dlaczego warto
 
 <div class="siatka">
@@ -32,7 +32,7 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 </div>
 </section>
 
-<section>
+<section class="section" markdown="1">
 ## Zakres usług
 
 <div class="siatka">
@@ -51,7 +51,7 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 </div>
 </section>
 
-<section>
+<section class="section" markdown="1">
 ## Obszar obsługi: Reda, Rumia, Wejherowo
 
 - [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/)
@@ -61,13 +61,14 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 - [Najczęstsze pytania (FAQ)](/faq/)
 </section>
 
-<section>
+<section class="section kontakt-box" markdown="1">
 ## Kontakt
 
 **Biuro Rachunkowe Magdalena Brzuchalska**  
-84-240 Reda, Wiklinowa 19  
-E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)  
-Telefon: [+48 503 095 915](tel:+48503095915)
+84-240 Reda, Wiklinowa 19
+
+- E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
+- Telefon: [+48 503 092 915](tel:+48503092915)
 
 <a class="cta" href="/kontakt/">Umów rozmowę</a>
 </section>
@@ -79,7 +80,7 @@ Telefon: [+48 503 095 915](tel:+48503095915)
   "name": "Biuro Rachunkowe Magdalena Brzuchalska",
   "url": "https://brzuchalska.com/",
   "email": "magdalena@brzuchalska.com",
-  "telephone": "+48 503 095 915",
+  "telephone": "+48 503 092 915",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Wiklinowa 19",
