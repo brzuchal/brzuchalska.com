@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="pl">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% if page.description %}
-      <meta name="description" content="{{ page.description | escape }}">
+    <meta name="description" content="{{ page.description | escape }}">
     {% elsif site.description %}
-      <meta name="description" content="{{ site.description | escape }}">
+    <meta name="description" content="{{ site.description | escape }}">
     {% endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <meta property="og:locale" content="pl_PL">
@@ -19,7 +19,8 @@
     {% seo %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
       :root {
         --bg: #f6f2ea;
