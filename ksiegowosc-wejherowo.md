@@ -30,4 +30,4 @@ Najczęściej współpracuję z jednoosobowymi działalnościami i małymi firma
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
 - [+48 503 092 915](tel:+48503092915)
 
-Sprawdź także: [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/), [Księgowość Rumia](/ksiegowosc-rumia/), [Kontakt](/kontakt/).
+Sprawdź także: [Biuro rachunkowe Reda]({{ '/biuro-rachunkowe-reda/' | relative_url }}), [Księgowość Rumia]({{ '/ksiegowosc-rumia/' | relative_url }}), [Kontakt]({{ '/kontakt/' | relative_url }}).

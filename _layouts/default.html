@@ -30,8 +30,8 @@
         --ink-soft: #555;
         --line: #e2d8c4;
         --hero-dark: #19150f;
-        --hero-dark-soft: rgba(26, 21, 14, 0.82);
-        --hero-dark-light: rgba(26, 21, 14, 0.56);
+        --hero-dark-soft: rgba(21, 16, 10, 0.86);
+        --hero-dark-light: rgba(21, 16, 10, 0.58);
         --accent: #b68a3b;
         --accent-hover: #a77c30;
       }
@@ -70,49 +70,64 @@
       .site-header {
         color: #f4f0e8;
         position: relative;
-        isolation: isolate;
       }
 
       .hero {
         position: relative;
         background-image:
-          linear-gradient(105deg, var(--hero-dark-soft) 0%, var(--hero-dark-light) 58%, rgba(20, 16, 11, 0.76) 100%),
-          url('/assets/img/background.png');
+          linear-gradient(112deg, var(--hero-dark-soft) 3%, var(--hero-dark-light) 52%, rgba(19, 14, 10, 0.88) 100%),
+          url('{{ "/assets/img/background.png" | relative_url }}');
         background-size: cover;
         background-position: center right;
-        min-height: 620px;
+        min-height: 700px;
         display: flex;
         align-items: stretch;
       }
 
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(13, 10, 7, 0.38), rgba(13, 10, 7, 0));
+        pointer-events: none;
+      }
+
       .hero--subpage {
-        min-height: 430px;
+        min-height: 520px;
       }
 
       .hero-shell {
         width: 100%;
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 1;
       }
 
       .topbar {
-        padding-top: 1.2rem;
+        padding-top: 1.35rem;
       }
 
       .head-row {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1.2rem;
-        border: 1px solid rgba(244, 240, 232, 0.25);
-        background: rgba(23, 18, 13, 0.28);
-        backdrop-filter: blur(3px);
-        border-radius: 16px;
-        padding: 0.85rem 1.1rem;
+        gap: 1rem;
+        border-radius: 999px;
+        padding: 0.6rem 0.75rem 0.6rem 1.1rem;
+        background: rgba(20, 15, 11, 0.45);
+        border: 1px solid rgba(255, 244, 228, 0.2);
+        backdrop-filter: blur(8px);
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        flex: 0 1 420px;
       }
 
       .logo img {
-        width: min(460px, 100%);
+        width: min(380px, 100%);
         height: auto;
         display: block;
       }
@@ -121,46 +136,50 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 0.8rem;
+        gap: 0.35rem;
       }
 
       .nav a {
         color: #f5efe3;
         text-decoration: none;
-        font-size: 0.95rem;
-        padding: 0.2rem 0.1rem;
-        border-bottom: 1px solid transparent;
-        transition: border-color 0.2s ease, color 0.2s ease;
+        font-size: 0.9rem;
+        letter-spacing: 0.01em;
+        padding: 0.45rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
       }
 
       .nav a:hover,
-      .nav a:focus-visible {
-        border-color: rgba(244, 240, 232, 0.65);
+      .nav a:focus-visible,
+      .nav a.is-current {
+        border-color: rgba(251, 241, 221, 0.45);
+        background: rgba(255, 245, 228, 0.12);
         color: #fff;
         outline: none;
       }
 
       .hero-content {
         margin: auto 0;
-        padding: 3.8rem 0 5.4rem;
+        padding: 5.5rem 0 7rem;
       }
 
       .hero-copy {
-        max-width: 700px;
+        max-width: 760px;
       }
 
       .hero h1 {
         color: #fff;
-        font-size: clamp(2.1rem, 5vw, 4rem);
-        max-width: 16ch;
+        font-size: clamp(2.25rem, 5.2vw, 4.4rem);
+        max-width: 15ch;
         text-wrap: balance;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
       }
 
       .hero p {
         color: rgba(249, 245, 237, 0.95);
-        font-size: clamp(1.05rem, 1.8vw, 1.32rem);
-        line-height: 1.75;
+        font-size: clamp(1.08rem, 1.9vw, 1.34rem);
+        line-height: 1.8;
         max-width: 60ch;
         margin-bottom: 1.7rem;
       }
@@ -192,21 +211,21 @@
       }
 
       main {
-        padding: 0 0 4rem;
+        padding: 0 0 4.5rem;
       }
 
       .content-home {
-        margin-top: -2.8rem;
+        margin-top: -3.2rem;
         position: relative;
-        z-index: 2;
+        z-index: 3;
       }
 
       .feature-band {
         background: var(--surface);
         border: 1px solid var(--line);
-        border-radius: 18px;
+        border-radius: 20px;
         box-shadow: 0 14px 36px rgba(44, 33, 15, 0.08);
-        padding: clamp(1.45rem, 2.8vw, 2.4rem);
+        padding: clamp(1.45rem, 2.8vw, 2.6rem);
       }
 
       .feature-band__intro {
@@ -284,27 +303,68 @@
         margin-bottom: 0.45rem;
       }
 
-      .prose {
-        margin-top: -1.6rem;
+      .content-page {
+        margin-top: -2.7rem;
+        position: relative;
+        z-index: 3;
+      }
+
+      .service-layout {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .service-content {
         background: var(--surface);
         border: 1px solid var(--line);
-        border-radius: 14px;
-        padding: clamp(1.4rem, 2.5vw, 2.4rem);
-        box-shadow: 0 14px 32px rgba(44, 33, 15, 0.05);
+        border-radius: 18px;
+        box-shadow: 0 14px 34px rgba(44, 33, 15, 0.08);
+        padding: clamp(1.4rem, 2.7vw, 2.8rem);
       }
 
-      .prose h2 {
-        font-size: clamp(1.38rem, 2.2vw, 1.9rem);
-        margin: 1.35rem 0 0.65rem;
+      .service-flow {
+        max-width: 78ch;
       }
 
-      .prose h2:first-child {
+      .service-flow > *:last-child {
+        margin-bottom: 0;
+      }
+
+      .service-flow h2 {
+        font-size: clamp(1.45rem, 2.5vw, 2.05rem);
+        margin: 1.7rem 0 0.72rem;
+      }
+
+      .service-flow h2:first-child {
         margin-top: 0;
       }
 
-      .prose p,
-      .prose li {
+      .service-flow p,
+      .service-flow li {
         color: #333;
+        font-size: 1.04rem;
+      }
+
+      .service-flow ul,
+      .service-flow ol {
+        padding-left: 1.35rem;
+      }
+
+      .service-cta {
+        background: linear-gradient(145deg, #fffef9 0%, #f8f1e4 100%);
+        border: 1px solid #e7d8be;
+        border-radius: 18px;
+        padding: clamp(1.35rem, 2.2vw, 2rem);
+      }
+
+      .service-cta h2 {
+        font-size: clamp(1.4rem, 2.5vw, 1.95rem);
+        margin-bottom: 0.45rem;
+      }
+
+      .service-cta p {
+        color: #3a3128;
+        margin-bottom: 1rem;
       }
 
       footer {
@@ -320,8 +380,14 @@
 
       @media (max-width: 1040px) {
         .head-row {
+          border-radius: 22px;
+          padding: 0.9rem;
           flex-direction: column;
           align-items: flex-start;
+        }
+
+        .logo {
+          flex-basis: auto;
         }
 
         .nav {
@@ -335,28 +401,29 @@
 
       @media (max-width: 740px) {
         .container {
-          width: min(1180px, calc(100% - 1.5rem));
+          width: min(1180px, calc(100% - 1.35rem));
         }
 
         .hero {
-          min-height: 560px;
+          min-height: 620px;
           background-position: center;
         }
 
         .hero--subpage {
-          min-height: 390px;
+          min-height: 500px;
         }
 
         .hero-content {
-          padding: 2.8rem 0 4.4rem;
+          padding: 3.7rem 0 5.4rem;
         }
 
         .feature-grid {
           grid-template-columns: 1fr;
         }
 
-        .content-home {
-          margin-top: -2rem;
+        .content-home,
+        .content-page {
+          margin-top: -1.8rem;
         }
       }
     </style>
@@ -368,17 +435,17 @@
         <div class="container hero-shell">
           <div class="topbar">
             <div class="head-row">
-              <a class="logo" href="/" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
-                <img src="/assets/img/noBgWhite.png" alt="Biuro Rachunkowe Magdalena Brzuchalska">
+              <a class="logo" href="{{ '/' | relative_url }}" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
+                <img src="{{ '/assets/img/noBgWhite.png' | relative_url }}" alt="Biuro Rachunkowe Magdalena Brzuchalska">
               </a>
               <nav class="nav" aria-label="Nawigacja główna">
-                <a href="/">Strona główna</a>
-                <a href="/biuro-rachunkowe-reda/">Reda</a>
-                <a href="/ksiegowosc-rumia/">Rumia</a>
-                <a href="/ksiegowosc-wejherowo/">Wejherowo</a>
-                <a href="/ksiegowosc-dla-przedszkoli/">Przedszkola i żłobki</a>
-                <a href="/faq/">FAQ</a>
-                <a href="/kontakt/">Kontakt</a>
+                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-current"{% endif %}>Strona główna</a>
+                <a href="{{ '/biuro-rachunkowe-reda/' | relative_url }}" {% if page.url == '/biuro-rachunkowe-reda/' %}class="is-current"{% endif %}>Reda</a>
+                <a href="{{ '/ksiegowosc-rumia/' | relative_url }}" {% if page.url == '/ksiegowosc-rumia/' %}class="is-current"{% endif %}>Rumia</a>
+                <a href="{{ '/ksiegowosc-wejherowo/' | relative_url }}" {% if page.url == '/ksiegowosc-wejherowo/' %}class="is-current"{% endif %}>Wejherowo</a>
+                <a href="{{ '/ksiegowosc-dla-przedszkoli/' | relative_url }}" {% if page.url == '/ksiegowosc-dla-przedszkoli/' %}class="is-current"{% endif %}>Przedszkola i żłobki</a>
+                <a href="{{ '/faq/' | relative_url }}" {% if page.url == '/faq/' %}class="is-current"{% endif %}>FAQ</a>
+                <a href="{{ '/kontakt/' | relative_url }}" {% if page.url == '/kontakt/' %}class="is-current"{% endif %}>Kontakt</a>
               </nav>
             </div>
           </div>
@@ -388,10 +455,10 @@
               <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
               <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
               {% if is_home %}
-                <a class="cta" href="/kontakt/">Umów rozmowę</a>
+                <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
                 <p class="hero-meta">Reda · Rumia · Wejherowo · współpraca lokalnie i online</p>
               {% else %}
-                <a class="cta" href="/kontakt/">Skontaktuj się</a>
+                <a class="cta" href="{{ '/kontakt/' | relative_url }}">Skontaktuj się</a>
               {% endif %}
             </div>
           </div>
@@ -405,9 +472,21 @@
           {{ content }}
         </div>
       {% else %}
-        <article class="prose">
-          {{ content }}
-        </article>
+        <div class="content-page">
+          <div class="service-layout">
+            <section class="service-content" aria-label="Szczegóły usługi">
+              <div class="service-flow">
+                {{ content }}
+              </div>
+            </section>
+
+            <section class="service-cta" aria-label="Kontakt i współpraca">
+              <h2>Porozmawiajmy o bezpiecznej i spokojnej księgowości</h2>
+              <p>Jeśli chcesz uporządkować rozliczenia i współpracować z biurem, które pilnuje terminów oraz jasnej komunikacji, zapraszam do kontaktu.</p>
+              <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
+            </section>
+          </div>
+        </div>
       {% endif %}
     </main>
 
