@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if page.description %}
+      <meta name="description" content="{{ page.description | escape }}">
+    {% elsif site.description %}
+      <meta name="description" content="{{ site.description | escape }}">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="{{ site.title | escape }}">
+    {% seo %}
+    <style>
+      :root {
+        --tlo: #f7f5f1;
+        --powierzchnia: #ffffff;
+        --naglowek: #1f2a37;
+        --akcent: #b98b2f;
+        --tekst: #1f2933;
+        --muted: #52606d;
+        --border: #d9d9d9;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: var(--tekst);
+        background: var(--tlo);
+        line-height: 1.65;
+      }
+      a { color: #1b4b72; }
+      .container { width: min(1040px, calc(100% - 2rem)); margin: 0 auto; }
+      header {
+        background: linear-gradient(145deg, #1f2a37 0%, #243447 65%, #2e4157 100%);
+        color: #fff;
+      }
+      .topbar {
+        padding: 0.85rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+      }
+            .topbar .head-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+      .logo { display: inline-flex; align-items: center; }
+      .logo img { width: min(520px, 100%); height: auto; display: block; }
+      .topbar nav { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+      .topbar a { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+      .hero { padding: 3.3rem 0 3.8rem; }
+      .hero h1 { margin: 0 0 1rem; font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.18; }
+      .hero p { margin: 0; max-width: 760px; color: #e8edf3; font-size: 1.08rem; }
+      main { padding: 2rem 0 3rem; }
+      section, .blok {
+        background: var(--powierzchnia);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.4rem;
+        margin-bottom: 1rem;
+      }
+      h2 { margin-top: 0; color: #1d2a39; }
+      .siatka {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.9rem;
+      }
+      .karta {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem;
+      }
+      .karta h3 { margin-top: 0; }
+      .cta {
+        display: inline-block;
+        padding: 0.68rem 1rem;
+        border-radius: 10px;
+        background: var(--akcent);
+        color: #1f1f1f;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        padding: 1.2rem 0 2rem;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="container">
+          <div class="head-row">
+            <a class="logo" href="/" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
+              <img src="/assets/img/logo-brzuchalska.svg" alt="Biuro Rachunkowe Magdalena Brzuchalska">
+            </a>
+            <nav aria-label="Nawigacja główna">
+            <a href="/">Strona główna</a>
+            <a href="/biuro-rachunkowe-reda/">Reda</a>
+            <a href="/ksiegowosc-rumia/">Rumia</a>
+            <a href="/ksiegowosc-wejherowo/">Wejherowo</a>
+            <a href="/ksiegowosc-dla-przedszkoli/">Przedszkola i żłobki</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/kontakt/">Kontakt</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="container">
+          <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
+          <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer>
+      <div class="container">
+        <strong>Biuro Rachunkowe Magdalena Brzuchalska</strong><br>
+        84-240 Reda, Wiklinowa 19 · <a href="mailto:magdalena@brzuchalska.com">magdalena@brzuchalska.com</a> · <a href="tel:+48502093929">+48 502 093 929</a>
+      </div>
+    </footer>
+  </body>
+</html>

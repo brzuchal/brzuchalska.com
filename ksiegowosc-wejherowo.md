@@ -1,31 +1,33 @@
 ---
-layout: default
-title: Księgowość Wejherowo – biuro rachunkowe dla małych firm
-description: Księgowość dla firm z Wejherowa: KPiR, ryczałt, kadry i płace oraz wsparcie bieżące. Lokalna obsługa przez biuro rachunkowe z Redy.
-permalink: /ksiegowosc-wejherowo/
+layout: "default"
+title: "Księgowość Wejherowo – biuro rachunkowe dla małych firm"
+description: "Księgowość dla firm z Wejherowa: KPiR, ryczałt, kadry i płace oraz bieżące wsparcie rozliczeń."
+permalink: "/ksiegowosc-wejherowo/"
+hero_title: "Księgowość Wejherowo"
+hero_lead: "Obsługa księgowa dla działalności z Wejherowa: przejrzyste rozliczenia i stały kontakt z księgową."
 ---
 
-# Księgowość Wejherowo
+## Księgowość dla działalności z Wejherowa
 
-Jeżeli prowadzisz działalność w Wejherowie i szukasz stałej obsługi księgowej, mogę poprowadzić rozliczenia Twojej firmy w przejrzysty i terminowy sposób.
+Prowadzę rozliczenia firm z Wejherowa w sposób uporządkowany i terminowy, z naciskiem na bezpieczeństwo formalne.
 
-## Jakie usługi realizuję dla firm z Wejherowa
+## Usługi
 
 - prowadzenie KPiR,
 - rozliczanie ryczałtu,
 - kadry i płace,
 - rozliczenia podatkowe i ZUS,
-- jednorazowe rozliczenia w konkretnych sprawach.
+- wsparcie w wybranych sprawach jednorazowych.
 
 ## Kto najczęściej korzysta
 
-Najczęściej współpracuję z jednoosobowymi działalnościami i małymi firmami, które potrzebują bieżącej opieki księgowej bez zbędnej formalizacji procesu.
+Najczęściej współpracuję z jednoosobowymi działalnościami i małymi firmami usługowymi.
 
 ## Kontakt
 
 - **Biuro Rachunkowe Magdalena Brzuchalska**
 - 84-240 Reda, Wiklinowa 19
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
-- [+48 503 095 915](tel:+48503095915)
+- [+48 502 093 929](tel:+48502093929)
 
-Zobacz też: [biuro rachunkowe Reda](/biuro-rachunkowe-reda/), [księgowość Rumia](/ksiegowosc-rumia/), [strona główna](/).
+Sprawdź także: [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/), [Księgowość Rumia](/ksiegowosc-rumia/), [Kontakt](/kontakt/).
