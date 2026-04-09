@@ -60,11 +60,11 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 <section class="section section--soft" markdown="1">
 ## Obszar obsługi: Reda, Rumia, Wejherowo
 
-- [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/)
-- [Księgowość Rumia](/ksiegowosc-rumia/)
-- [Księgowość Wejherowo](/ksiegowosc-wejherowo/)
-- [Księgowość dla przedszkoli i żłobków](/ksiegowosc-dla-przedszkoli/)
-- [Najczęstsze pytania (FAQ)](/faq/)
+- [Biuro rachunkowe Reda]({{ '/biuro-rachunkowe-reda/' | relative_url }})
+- [Księgowość Rumia]({{ '/ksiegowosc-rumia/' | relative_url }})
+- [Księgowość Wejherowo]({{ '/ksiegowosc-wejherowo/' | relative_url }})
+- [Księgowość dla przedszkoli i żłobków]({{ '/ksiegowosc-dla-przedszkoli/' | relative_url }})
+- [Najczęstsze pytania (FAQ)]({{ '/faq/' | relative_url }})
 </section>
 
 <section class="section" markdown="1">
@@ -77,7 +77,7 @@ Jestem magistrem finansów i rachunkowości oraz od ponad 15 lat prowadzę księ
 - E-mail: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
 - Telefon: [+48 503 092 915](tel:+48503092915)
 
-<a class="cta" href="/kontakt/">Umów rozmowę</a>
+<a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
 </section>
 
 <script type="application/ld+json">

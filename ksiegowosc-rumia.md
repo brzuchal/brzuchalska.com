@@ -30,4 +30,4 @@ Przy pracy z firmami z Rumii stawiam na sprawny kontakt, terminowe rozliczenia i
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
 - [+48 503 092 915](tel:+48503092915)
 
-Zobacz też: [Biuro rachunkowe Reda](/biuro-rachunkowe-reda/), [Księgowość Wejherowo](/ksiegowosc-wejherowo/), [FAQ](/faq/).
+Zobacz też: [Biuro rachunkowe Reda]({{ '/biuro-rachunkowe-reda/' | relative_url }}), [Księgowość Wejherowo]({{ '/ksiegowosc-wejherowo/' | relative_url }}), [FAQ]({{ '/faq/' | relative_url }}).
