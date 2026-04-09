@@ -28,6 +28,6 @@ Dane biura:
 - **Biuro Rachunkowe Magdalena Brzuchalska**
 - 84-240 Reda, Wiklinowa 19
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
-- [+48 502 093 929](tel:+48502093929)
+- [+48 503 095 915](tel:+48503095915)
 
 Powiązane strony: [biuro rachunkowe Reda](/biuro-rachunkowe-reda/), [księgowość Wejherowo](/ksiegowosc-wejherowo/), [FAQ](/faq/).
