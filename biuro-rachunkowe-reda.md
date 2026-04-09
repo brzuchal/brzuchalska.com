@@ -1,35 +1,33 @@
 ---
-layout: default
-title: Biuro rachunkowe Reda – księgowość dla małych firm
-description: Biuro rachunkowe w Redzie: KPiR, ryczałt, kadry i płace oraz rozliczenia dla małych firm. Obsługa lokalna i indywidualne podejście.
-permalink: /biuro-rachunkowe-reda/
+layout: "default"
+title: "Biuro rachunkowe Reda – księgowość dla małych firm"
+description: "Biuro rachunkowe w Redzie dla małych firm. KPiR, ryczałt, kadry i płace oraz stałe wsparcie księgowe."
+permalink: "/biuro-rachunkowe-reda/"
+hero_title: "Biuro rachunkowe Reda"
+hero_lead: "Stała księgowość dla małych firm z Redy: KPiR, ryczałt, kadry i płace w przejrzystym modelu współpracy."
 ---
 
-# Biuro rachunkowe Reda
+## Księgowość Reda dla małych firm
 
-Szukasz biura rachunkowego w Redzie, które prowadzi księgowość małych firm w sposób konkretny i terminowy? Pracuję z przedsiębiorcami z Redy na co dzień, pomagając w regularnych rozliczeniach oraz w jednorazowych sprawach księgowych.
+Jeżeli prowadzisz działalność w Redzie i szukasz uporządkowanej obsługi księgowej, zapewniam wsparcie w codziennych rozliczeniach i formalnościach.
 
-## Co obejmuje obsługa księgowa w Redzie
+## Co obejmuje obsługa
 
 - prowadzenie KPiR,
-- rozliczenia ryczałtu,
+- rozliczanie ryczałtu,
 - obsługa rozliczeń z ZUS i urzędem skarbowym,
-- bieżące wsparcie w dokumentach księgowych,
-- kadry i płace w małych podmiotach.
+- bieżące wsparcie księgowe,
+- kadry i płace.
 
-## Dla kogo ta usługa
+## Dla kogo
 
-- jednoosobowe działalności gospodarcze,
-- małe firmy usługowe i handlowe,
-- przedsiębiorcy, którzy chcą uporządkować księgowość i uniknąć błędów formalnych.
+Współpracuję głównie z jednoosobowymi działalnościami oraz małymi firmami usługowymi i handlowymi z Redy.
 
-## Kontakt z biurem rachunkowym w Redzie
-
-Jeżeli prowadzisz firmę w Redzie lub okolicy, skontaktuj się:
+## Kontakt
 
 - **Biuro Rachunkowe Magdalena Brzuchalska**
 - 84-240 Reda, Wiklinowa 19
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
-- [+48 503 095 915](tel:+48503095915)
+- [+48 502 093 929](tel:+48502093929)
 
-Zobacz także: [księgowość Rumia](/ksiegowosc-rumia/), [księgowość Wejherowo](/ksiegowosc-wejherowo/), [strona główna](/).
+Powiązane strony: [Księgowość Rumia](/ksiegowosc-rumia/), [Księgowość Wejherowo](/ksiegowosc-wejherowo/), [Kontakt](/kontakt/).
