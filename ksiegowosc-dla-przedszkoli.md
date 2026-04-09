@@ -27,6 +27,6 @@ Placówka zyskuje uporządkowane dokumenty, mniejsze ryzyko błędów i stały k
 - **Biuro Rachunkowe Magdalena Brzuchalska**
 - 84-240 Reda, Wiklinowa 19
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
-- [+48 503 095 915](tel:+48503095915)
+- [+48 503 092 915](tel:+48503092915)
 
 Dodatkowo: [FAQ](/faq/) oraz [Strona główna](/).
