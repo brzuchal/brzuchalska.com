@@ -17,27 +17,30 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:site_name" content="{{ site.title | escape }}">
     {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg: #f2f1ed;
+        --bg: #f6f4ef;
         --surface: #ffffff;
-        --surface-muted: #f7f4eb;
-        --ink: #16171b;
-        --ink-soft: #4d5059;
-        --line: #d8d4ca;
-        --accent: #d3af63;
-        --accent-soft: #f3e6c7;
-        --dark: #0e121b;
-        --dark-soft: #1a2230;
-        --dark-elev: #232f43;
-        --hero-glow: rgba(211, 175, 99, 0.2);
+        --surface-muted: #fff9ea;
+        --ink: #111111;
+        --ink-soft: #444444;
+        --line: #e3dccd;
+        --accent: #ffc93c;
+        --accent-soft: #ffe9ac;
+        --dark: #111111;
+        --dark-soft: #1e1e1e;
+        --dark-elev: #2b2b2b;
+        --hero-glow: rgba(255, 201, 60, 0.24);
       }
 
       * { box-sizing: border-box; }
 
       body {
         margin: 0;
-        font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-family: "Syncopate", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: var(--ink);
         background: var(--bg);
         line-height: 1.75;
@@ -45,7 +48,7 @@
       }
 
       a {
-        color: #1d466f;
+        color: #785600;
         text-underline-offset: 0.2em;
       }
 
@@ -57,8 +60,8 @@
       .site-header {
         background:
           radial-gradient(circle at 10% 18%, var(--hero-glow) 0%, transparent 42%),
-          radial-gradient(circle at 92% 10%, rgba(93, 119, 165, 0.24) 0%, transparent 38%),
-          linear-gradient(132deg, #0b1019 0%, var(--dark-soft) 58%, var(--dark-elev) 100%);
+          radial-gradient(circle at 92% 10%, rgba(255, 201, 60, 0.2) 0%, transparent 38%),
+          linear-gradient(132deg, var(--dark) 0%, var(--dark-soft) 58%, var(--dark-elev) 100%);
         color: #fff;
         position: relative;
         overflow: hidden;
@@ -125,9 +128,10 @@
       .hero h1 {
         margin: 0;
         max-width: 16.5ch;
+        font-family: "American Captain", "Syncopate", "Impact", "Arial Narrow", sans-serif;
         font-size: clamp(2.5rem, 6vw, 4.9rem);
         line-height: 1.02;
-        letter-spacing: -0.03em;
+        letter-spacing: 0.01em;
         text-wrap: balance;
         font-weight: 700;
       }
@@ -158,7 +162,7 @@
         display: inline-block;
         padding: 0.9rem 1.35rem;
         border-radius: 12px;
-        background: linear-gradient(175deg, #dfbf7c 0%, var(--accent) 100%);
+        background: linear-gradient(175deg, #ffd86f 0%, var(--accent) 100%);
         color: #171717;
         text-decoration: none;
         font-weight: 700;
@@ -207,8 +211,8 @@
       }
 
       .section--dark {
-        background: linear-gradient(145deg, #0f1623 0%, #1a2638 100%);
-        color: #f5f7fb;
+        background: linear-gradient(145deg, #161616 0%, #2a2a2a 100%);
+        color: #fbf7ea;
         border-color: rgba(255, 255, 255, 0.14);
       }
 
@@ -374,7 +378,7 @@
         <div class="container">
           <div class="head-row">
             <a class="logo" href="/" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
-              <img src="/assets/img/logo-brzuchalska.svg" alt="Biuro Rachunkowe Magdalena Brzuchalska">
+              <img src="/assets/img/noBgWhite.png" alt="Biuro Rachunkowe Magdalena Brzuchalska">
             </a>
             <nav class="nav" aria-label="Nawigacja główna">
               <a href="/">Strona główna</a>
