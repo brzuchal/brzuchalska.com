@@ -28,6 +28,6 @@ Współpracuję głównie z jednoosobowymi działalnościami oraz małymi firmam
 - **Biuro Rachunkowe Magdalena Brzuchalska**
 - 84-240 Reda, Wiklinowa 19
 - [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com)
-- [+48 502 093 929](tel:+48502093929)
+- [+48 503 095 915](tel:+48503095915)
 
 Powiązane strony: [Księgowość Rumia](/ksiegowosc-rumia/), [Księgowość Wejherowo](/ksiegowosc-wejherowo/), [Kontakt](/kontakt/).

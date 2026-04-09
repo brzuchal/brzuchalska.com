@@ -27,7 +27,7 @@ Decyzja zależy od rodzaju działalności, poziomu kosztów i modelu rozliczeń.
 
 Najprościej skontaktować się telefonicznie lub mailowo, opisać profil działalności i zakres potrzeb. Następnie ustalamy zasady współpracy i harmonogram przekazywania dokumentów.
 
-Skontaktuj się: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com) · [+48 502 093 929](tel:+48502093929).
+Skontaktuj się: [magdalena@brzuchalska.com](mailto:magdalena@brzuchalska.com) · [+48 503 095 915](tel:+48503095915).
 
 <script type="application/ld+json">
 {
