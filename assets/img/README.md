@@ -7,7 +7,7 @@ Ten katalog zawiera lokalne zasoby graficzne używane przez stronę.
 - `noBgWhite.png` – logotyp bez tła (biały), wykorzystywany w ciemnym nagłówku strony.
 - `noBgBlack.png` – logotyp bez tła w wersji ciemnej.
 - `noBgColor.png` – logotyp bez tła w kolorze firmowym.
-- `with_padding (1).png` – wersja logo z dodatkowymi marginesami.
+- `with_padding.png` – wersja logo z dodatkowymi marginesami.
 - `197419498.png` – alternatywny eksport logotypu.
 
 ## Identyfikacja wizualna
