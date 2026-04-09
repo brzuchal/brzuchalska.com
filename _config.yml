@@ -1,3 +1,8 @@
-title: Biuro Rachunkowe Magdalena Brzuchalski
-description: Profesjonalne usługi księgowe i kadrowe dla małych firm, przedszkoli i żłobków. Specjalizacja w KPiR, ryczałcie oraz rozliczeniach dotacji gminnych.
+title: Biuro Rachunkowe Magdalena Brzuchalska
+description: Biuro rachunkowe w Redzie. Księgowość dla małych firm, KPiR, ryczałt, kadry i płace oraz rozliczenia przedszkoli i żłobków w Redzie, Rumii i Wejherowie.
 theme: jekyll-theme-cayman
+lang: pl-PL
+url: https://brzuchalska.com
+
+plugins:
+  - jekyll-seo-tag
