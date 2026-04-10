@@ -504,6 +504,9 @@
   </head>
   <body>
     {% assign is_home = page.url == "/" %}
+    {% assign show_hero = page.show_hero | default: true %}
+    {% assign show_service_cta = page.show_service_cta | default: true %}
+    {% if show_hero %}
     <header class="site-header">
       <div class="hero {% unless is_home %}hero--subpage{% endunless %}">
         <div class="container hero-shell">
@@ -529,16 +532,17 @@
               <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
               <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
               {% if is_home %}
-                <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
-                <p class="hero-meta">Reda · Rumia · Wejherowo · współpraca lokalnie i online</p>
+              <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
+              <p class="hero-meta">Reda · Rumia · Wejherowo · współpraca lokalnie i online</p>
               {% else %}
-                <a class="cta" href="{{ '/kontakt/' | relative_url }}">Skontaktuj się</a>
+              <a class="cta" href="{{ '/kontakt/' | relative_url }}">Skontaktuj się</a>
               {% endif %}
             </div>
           </div>
         </div>
       </div>
     </header>
+    {% endif %}
 
     <main class="container">
       {% if is_home %}
