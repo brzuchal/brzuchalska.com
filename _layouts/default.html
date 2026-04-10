@@ -503,10 +503,25 @@
     </style>
   </head>
   <body>
-    {% assign is_home = page.url == "/" %}
-    {% assign show_hero = page.show_hero %}
-    {% assign show_service_shell = page.show_service_shell %}
-    {% assign show_service_cta = page.show_service_cta %}
+    {% assign is_home = false %}
+    {% if page.url == "/" %}
+      {% assign is_home = true %}
+    {% endif %}
+
+    {% assign show_hero = true %}
+    {% if page.show_hero == false %}
+      {% assign show_hero = false %}
+    {% endif %}
+
+    {% assign show_service_shell = true %}
+    {% if page.show_service_shell == false %}
+      {% assign show_service_shell = false %}
+    {% endif %}
+
+    {% assign show_service_cta = true %}
+    {% if page.show_service_cta == false %}
+      {% assign show_service_cta = false %}
+    {% endif %}
 
     {% if show_hero != false %}
     <header class="site-header">
