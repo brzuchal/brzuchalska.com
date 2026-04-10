@@ -9,53 +9,51 @@ show_service_shell: false
 show_service_cta: false
 ---
 
-<section class="section">
-    <div class="review-helper-card">
-        <h1>Pomoc w przygotowaniu opinii</h1>
+<section class="section section--review">
+    <h1>Pomoc w przygotowaniu opinii</h1>
 
-        <p class="review-helper-lead">
-            Dziękujemy za współpracę. Jeśli chcesz, możesz skorzystać z asystenta AI,
-            który pomoże ułożyć krótką i naturalną opinię o współpracy z Biurem
-            Rachunkowym Magdalena Brzuchalska.
-        </p>
+    <p class="review-helper-lead">
+        Dziękujemy za współpracę. Jeśli chcesz, możesz skorzystać z asystenta AI,
+        który pomoże ułożyć krótką i naturalną opinię o współpracy z Biurem
+        Rachunkowym Magdalena Brzuchalska.
+    </p>
 
-        <div class="review-helper-actions">
-            <a
-                    class="review-button review-button--assistant"
-                    href="https://chatgpt.com/g/g-69d8a8a32c848191ae71c21ce19b55d9-asystent-opinii-br-magdalena-brzuchalska"
-                    rel="nofollow noopener"
-            >
-        <span class="review-button-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 3l2.2 4.5L19 10l-4.8 2.5L12 17l-2.2-4.5L5 10l4.8-2.5L12 3z"></path>
-          </svg>
-        </span>
-                <span>Otwórz asystenta opinii</span>
-            </a>
+    <div class="review-helper-actions">
+        <a
+                class="review-button review-button--assistant"
+                href="https://chatgpt.com/g/g-69d8a8a32c848191ae71c21ce19b55d9-asystent-opinii-br-magdalena-brzuchalska"
+                rel="nofollow noopener"
+        >
+    <span class="review-button-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3l2.2 4.5L19 10l-4.8 2.5L12 17l-2.2-4.5L5 10l4.8-2.5L12 3z"></path>
+      </svg>
+    </span>
+            <span>Otwórz asystenta opinii</span>
+        </a>
 
-            <a
-                    class="review-button review-button--google"
-                    href="https://g.page/r/CUd_yq3xJqZVEBM/review"
-                    rel="nofollow noopener"
-            >
-        <span class="review-button-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 20h9"></path>
-            <path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4 12.5-12.5z"></path>
-          </svg>
-        </span>
-                <span>Dodaj opinię w Google</span>
-            </a>
-        </div>
-
-        <p class="review-helper-note">
-            Asystent pomaga przygotować treść opinii. Publikacja opinii odbywa się samodzielnie w Google.
-        </p>
+        <a
+                class="review-button review-button--google"
+                href="https://g.page/r/CUd_yq3xJqZVEBM/review"
+                rel="nofollow noopener"
+        >
+    <span class="review-button-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 20h9"></path>
+        <path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4 12.5-12.5z"></path>
+      </svg>
+    </span>
+            <span>Dodaj opinię w Google</span>
+        </a>
     </div>
+
+    <p class="review-helper-note">
+        Asystent pomaga przygotować treść opinii. Publikacja opinii odbywa się samodzielnie w Google.
+    </p>
 </section>
 
 <style>
-    .review-helper-card {
+    .section--review {
         max-width: 860px;
         margin: 0 auto;
         padding: 40px;
@@ -65,7 +63,7 @@ show_service_cta: false
         box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
     }
 
-    .review-helper-card h1 {
+    .section--review h1 {
         margin: 0 0 18px;
     }
 
@@ -119,14 +117,14 @@ show_service_cta: false
     }
 
     .review-button--assistant {
-        background: #3f3f46;
-        color: #ffffff;
-        box-shadow: 0 10px 24px rgba(63, 63, 70, 0.24);
+        background: var(--accent);
+        color: #24180c;
+        box-shadow: 0 10px 24px rgba(255, 201, 60, 0.24);
     }
 
     .review-button--assistant:hover {
-        background: #27272a;
-        color: #ffffff;
+        background: var(--accent-hover);
+        color: #24180c;
     }
 
     .review-button--google {
@@ -146,7 +144,7 @@ show_service_cta: false
     }
 
     @media (max-width: 640px) {
-        .review-helper-card {
+        .section--review {
             padding: 28px 22px;
         }
 
