@@ -5,6 +5,7 @@ description: "Pomoc w przygotowaniu opinii o współpracy z Biurem Rachunkowym M
 permalink: /opinia/
 robots: noindex, nofollow
 show_hero: false
+show_service_shell: false
 show_service_cta: false
 ---
 
@@ -84,6 +85,7 @@ show_service_cta: false
     .review-button {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 12px;
         min-height: 52px;
         padding: 0 22px;
@@ -103,6 +105,17 @@ show_service_cta: false
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        width: 18px;
+        height: 18px;
+        flex: 0 0 18px;
+        line-height: 0;
+        transform: translateY(1px);
+    }
+
+    .review-button-icon svg {
+        display: block;
+        width: 18px;
+        height: 18px;
     }
 
     .review-button--assistant {
