@@ -504,11 +504,11 @@
   </head>
   <body>
     {% assign is_home = page.url == "/" %}
-    {% assign show_hero = page.show_hero | default: true %}
-    {% assign show_service_shell = page.show_service_shell | default: true %}
-    {% assign show_service_cta = page.show_service_cta | default: true %}
+    {% assign show_hero = page.show_hero %}
+    {% assign show_service_shell = page.show_service_shell %}
+    {% assign show_service_cta = page.show_service_cta %}
 
-    {% if show_hero %}
+    {% if show_hero != false %}
     <header class="site-header">
       <div class="hero {% unless is_home %}hero--subpage{% endunless %}">
         <div class="container hero-shell">
@@ -551,7 +551,7 @@
         <div class="content-home">
           {{ content }}
         </div>
-      {% elsif show_service_shell %}
+      {% elsif show_service_shell != false %}
         <div class="content-page">
           <div class="service-layout">
             <section class="service-content" aria-label="Szczegóły usługi">
@@ -560,7 +560,7 @@
               </div>
             </section>
 
-            {% if show_service_cta %}
+            {% if show_service_cta != false %}
             <section class="service-cta" aria-label="Kontakt i współpraca">
               <h2>Porozmawiajmy o bezpiecznej i spokojnej księgowości</h2>
               <p>Jeśli chcesz uporządkować rozliczenia i współpracować z biurem, które pilnuje terminów oraz jasnej komunikacji, zapraszam do kontaktu.</p>
