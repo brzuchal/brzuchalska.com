@@ -450,6 +450,47 @@
         }
       }
 
+      .site-header {
+        color: #f4f0e8;
+        position: relative;
+      }
+
+      .site-header--plain {
+        background: var(--hero-dark);
+      }
+
+      .topbar {
+        position: relative;
+        z-index: 20;
+        padding-top: 1.35rem;
+      }
+
+      .site-header--plain .topbar {
+        padding-bottom: 1rem;
+      }
+
+      .site-header--plain .head-row {
+        background: rgba(21, 16, 10, 0.86);
+        border-radius: 22px;
+      }
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        min-height: 680px;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 5% 100px;
+        margin-top: -92px;
+        padding-top: 92px;
+        color: #fff;
+        background: url('{{ "/assets/img/background.png" | relative_url }}') center/cover no-repeat;
+      }
+
+      .content-page--plain {
+        margin-top: 2rem;
+      }
+
       @media (max-width: 740px) {
         .container {
           width: min(1180px, calc(100% - 1.35rem));
@@ -523,71 +564,73 @@
       {% assign show_service_cta = false %}
     {% endif %}
 
-    {% if show_hero != false %}
-    <header class="site-header">
+    <header class="site-header {% unless show_hero %}site-header--plain{% endunless %}">
+      <div class="topbar">
+        <div class="container">
+          <div class="head-row">
+            <a class="logo" href="{{ '/' | relative_url }}" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
+              <img src="{{ '/assets/img/noBgWhite.png' | relative_url }}" alt="Biuro Rachunkowe Magdalena Brzuchalska">
+            </a>
+            <nav class="nav" aria-label="Nawigacja główna">
+              <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-current"{% endif %}>Strona główna</a>
+              <a href="{{ '/biuro-rachunkowe-reda/' | relative_url }}" {% if page.url == '/biuro-rachunkowe-reda/' %}class="is-current"{% endif %}>Reda</a>
+              <a href="{{ '/ksiegowosc-rumia/' | relative_url }}" {% if page.url == '/ksiegowosc-rumia/' %}class="is-current"{% endif %}>Rumia</a>
+              <a href="{{ '/ksiegowosc-wejherowo/' | relative_url }}" {% if page.url == '/ksiegowosc-wejherowo/' %}class="is-current"{% endif %}>Wejherowo</a>
+              <a href="{{ '/ksiegowosc-dla-przedszkoli/' | relative_url }}" {% if page.url == '/ksiegowosc-dla-przedszkoli/' %}class="is-current"{% endif %}>Przedszkola i żłobki</a>
+              <a href="{{ '/faq/' | relative_url }}" {% if page.url == '/faq/' %}class="is-current"{% endif %}>FAQ</a>
+              <a href="{{ '/kontakt/' | relative_url }}" {% if page.url == '/kontakt/' %}class="is-current"{% endif %}>Kontakt</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      {% if show_hero %}
       <div class="hero {% unless is_home %}hero--subpage{% endunless %}">
         <div class="container hero-shell">
-          <div class="topbar">
-            <div class="head-row">
-              <a class="logo" href="{{ '/' | relative_url }}" aria-label="Biuro Rachunkowe Magdalena Brzuchalska">
-                <img src="{{ '/assets/img/noBgWhite.png' | relative_url }}" alt="Biuro Rachunkowe Magdalena Brzuchalska">
-              </a>
-              <nav class="nav" aria-label="Nawigacja główna">
-                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-current"{% endif %}>Strona główna</a>
-                <a href="{{ '/biuro-rachunkowe-reda/' | relative_url }}" {% if page.url == '/biuro-rachunkowe-reda/' %}class="is-current"{% endif %}>Reda</a>
-                <a href="{{ '/ksiegowosc-rumia/' | relative_url }}" {% if page.url == '/ksiegowosc-rumia/' %}class="is-current"{% endif %}>Rumia</a>
-                <a href="{{ '/ksiegowosc-wejherowo/' | relative_url }}" {% if page.url == '/ksiegowosc-wejherowo/' %}class="is-current"{% endif %}>Wejherowo</a>
-                <a href="{{ '/ksiegowosc-dla-przedszkoli/' | relative_url }}" {% if page.url == '/ksiegowosc-dla-przedszkoli/' %}class="is-current"{% endif %}>Przedszkola i żłobki</a>
-                <a href="{{ '/faq/' | relative_url }}" {% if page.url == '/faq/' %}class="is-current"{% endif %}>FAQ</a>
-                <a href="{{ '/kontakt/' | relative_url }}" {% if page.url == '/kontakt/' %}class="is-current"{% endif %}>Kontakt</a>
-              </nav>
-            </div>
-          </div>
-
           <div class="hero-content">
             <div class="hero-copy">
               <h1>{% if page.hero_title %}{{ page.hero_title }}{% else %}Biuro Rachunkowe Magdalena Brzuchalska{% endif %}</h1>
               <p>{% if page.hero_lead %}{{ page.hero_lead }}{% else %}Księgowość i kadry dla małych firm oraz placówek oświatowych z Redy, Rumii i Wejherowa.{% endif %}</p>
               {% if is_home %}
-                <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
-                <p class="hero-meta">Reda · Rumia · Wejherowo · współpraca lokalnie i online</p>
+              <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
+              <p class="hero-meta">Reda · Rumia · Wejherowo · współpraca lokalnie i online</p>
               {% else %}
-                <a class="cta" href="{{ '/kontakt/' | relative_url }}">Skontaktuj się</a>
+              <a class="cta" href="{{ '/kontakt/' | relative_url }}">Skontaktuj się</a>
               {% endif %}
             </div>
           </div>
         </div>
       </div>
+      {% endif %}
     </header>
-    {% endif %}
 
     <main class="container">
       {% if is_home %}
-        <div class="content-home">
-          {{ content }}
-        </div>
-      {% elsif show_service_shell != false %}
-        <div class="content-page">
-          <div class="service-layout">
-            <section class="service-content" aria-label="Szczegóły usługi">
-              <div class="service-flow">
-                {{ content }}
-              </div>
-            </section>
+      <div class="content-home">
+        {{ content }}
+      </div>
+      {% elsif show_service_shell %}
+      <div class="content-page">
+        <div class="service-layout">
+          <section class="service-content" aria-label="Szczegóły usługi">
+            <div class="service-flow">
+              {{ content }}
+            </div>
+          </section>
 
-            {% if show_service_cta != false %}
-            <section class="service-cta" aria-label="Kontakt i współpraca">
-              <h2>Porozmawiajmy o bezpiecznej i spokojnej księgowości</h2>
-              <p>Jeśli chcesz uporządkować rozliczenia i współpracować z biurem, które pilnuje terminów oraz jasnej komunikacji, zapraszam do kontaktu.</p>
-              <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
-            </section>
-            {% endif %}
-          </div>
+          {% if show_service_cta %}
+          <section class="service-cta" aria-label="Kontakt i współpraca">
+            <h2>Porozmawiajmy o bezpiecznej i spokojnej księgowości</h2>
+            <p>Jeśli chcesz uporządkować rozliczenia i współpracować z biurem, które pilnuje terminów oraz jasnej komunikacji, zapraszam do kontaktu.</p>
+            <a class="cta" href="{{ '/kontakt/' | relative_url }}">Umów rozmowę</a>
+          </section>
+          {% endif %}
         </div>
+      </div>
       {% else %}
-        <div class="content-page">
-          {{ content }}
-        </div>
+      <div class="content-page content-page--plain">
+        {{ content }}
+      </div>
       {% endif %}
     </main>
 
